@@ -9,7 +9,7 @@ export const fetchUsers = () => {
       const response = await axios.get('https://jsonplaceholder.typicode.com/users');
       dispatch({type: UsersActionType.FETCH_USERS_SUCCESS, payload: response.data});
     } catch (error) {
-      dispatch({type: UsersActionType.FETCH_USERS_ERROR, payload: 'Fetch Error... :('})
+      dispatch({type: UsersActionType.FETCH_USERS_ERROR, payload: 'Fetch Error... :('});
     }
   }
 }
